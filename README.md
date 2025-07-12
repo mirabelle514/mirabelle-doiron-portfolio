@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Mirabelle Doiron - Portfolio
 
 A modern, responsive portfolio website built with React, TypeScript, and Tailwind CSS showcasing my experience as a Frontend Engineer, Mobile Developer, and AI enthusiast.
@@ -102,7 +101,4 @@ Run `npm run build` to create a production build in the `build` folder.
 ## License
 
 This project is open source and available under the [MIT License](LICENSE).
-=======
-# mirabelledoiron2025
-Updated online resume
->>>>>>> bdd8f032655322adeaed85ee36ccf3542e1b2972
+

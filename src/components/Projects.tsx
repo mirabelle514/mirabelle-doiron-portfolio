@@ -38,7 +38,7 @@ const Projects = () => {
   ];
 
   return (
-    <div id="projects" className="py-20 px-6" style={{ backgroundColor: '#242434' }}>
+    <div id="projects" className="py-20 px-6" style={{ backgroundColor: '#193441' }}>
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold mb-12 text-center" style={{ color: '#ffffff' }}>Featured <span style={{ color: '#ffffff' }}>Projects</span>
         </h2>

@@ -2,12 +2,11 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <div id="contact" className="py-20 px-6" style={{ backgroundColor: '#242434' }}>
+    <div id="contact" className="py-20 px-6" style={{ backgroundColor: '#193441' }}>
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-8" style={{ color: '#ffffff' }}>Let's Work Together</h2>
+        <h2 className="text-3xl font-bold mb-8" style={{ color: '#ffffff' }}>Contact Me</h2>
         <p className="text-lg mb-8 max-w-2xl mx-auto" style={{ color: '#ffffff' }}>
-          I'm actively seeking opportunities as a Frontend Engineer, Mobile Developer, or Full-Stack Developer 
-          with a focus on AI-powered applications and developer tooling.
+          I'm actively seeking opportunities as a Frontend Engineer, Mobile Developer, or Full-Stack Developer with a focus on AI-powered applications.
         </p>
         
         <div className="flex justify-center space-x-6">

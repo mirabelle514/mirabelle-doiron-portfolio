@@ -16,23 +16,29 @@ const Hero = ({ scrollToSection }: HeroProps) => {
               Specializing in developer tools and data-driven user experiences. 
               Passionate about AI integration and creating intelligent solutions.
             </p>
-          <div className="flex justify-center space-x-6 mb-12">
-            <a href="#" className="p-3 rounded hover:opacity-80 transition-opacity" style={{ backgroundColor: '#242434', color: '#ffffff', border: '1px solid #b9d6e2' }}>
-              Mobile
+          
+          <div className="flex justify-center space-x-6">
+            <a 
+              href="/resume.pdf" 
+              download="Mirabelle_Doiron_Resume.pdf"
+              className="flex items-center px-6 py-3 rounded hover:opacity-80 transition-opacity" 
+              style={{ backgroundColor: '#b9d6e2', color: '#193441' }}
+            >
+              <span className="mr-2">Download PDF</span>
+              <span style={{ fontSize: '16px' }}>↓</span>
             </a>
-            <a href="#projects" className="p-3 rounded hover:opacity-80 transition-opacity" style={{ backgroundColor: '#242434', color: '#ffffff', border: '1px solid #b9d6e2' }}>
-              Portfolio
-            </a>
-            <a href="mailto:mirabelle.doiron@gmail.com?subject=Portfolio%20Inquiry%20-%20Frontend%20Engineer%20Opportunity" className="p-3 rounded hover:opacity-80 transition-opacity" style={{ backgroundColor: '#242434', color: '#ffffff', border: '1px solid #b9d6e2' }}>
-              Email
+            
+            <a 
+              href="/resume.pdf" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center px-6 py-3 rounded hover:opacity-80 transition-opacity" 
+              style={{ backgroundColor: '#242434', color: '#ffffff', border: '1px solid #b9d6e2' }}
+            >
+              <span className="mr-2">View Online</span>
+              <span style={{ fontSize: '16px' }}>↗</span>
             </a>
           </div>
-          <button 
-            onClick={() => scrollToSection('projects')}
-            className="px-8 py-3 rounded hover:opacity-80 transition-opacity font-medium"
-            style={{ backgroundColor: '#242434', color: '#ffffff', border: '1px solid #b9d6e2' }}>
-            View My Work
-          </button>
         </div>
       </div>
     </div>
