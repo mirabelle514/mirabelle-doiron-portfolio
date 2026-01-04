@@ -26,23 +26,33 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="py-20 px-6" style={{backgroundColor: '#242434'}}>
+    <section id="experience" className="py-20 px-6" style={{backgroundColor: '#ffffff'}}>
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl font-bold text-white mb-12 text-center">Experience</h2>
+        <h2 className="text-3xl font-bold mb-4 text-center" style={{color: '#2d3748'}}>Experience</h2>
+        <p className="text-center mb-12" style={{color: '#4a5568'}}>
+          7+ years of professional experience in frontend development, and recently fell in love with AI integration technologies
+        </p>
         
-        <div className="space-y-4">
+        <div className="space-y-6">
           {experiences.map((exp, index) => (
             <div 
               key={index}
-              className="flex flex-col md:flex-row md:items-center md:justify-between p-4 rounded"
-              style={{backgroundColor: '#193441', border: '1px solid #b9d6e2'}}
+              className="p-6 rounded-lg"
+              style={{backgroundColor: '#f5f5f0', border: '1px solid #e2e8f0'}}
             >
-              <div className="flex items-center gap-2">
-                <span className="font-semibold text-white">{exp.title}</span>
-                <span style={{color: '#b9d6e2'}}>|</span>
-                <span style={{color: '#b9d6e2'}}>{exp.company}</span>
+              <div className="flex flex-col md:flex-row md:items-start md:justify-between">
+                <div>
+                  <div className="flex items-center gap-2 mb-1">
+                    <span className="text-lg" style={{color: '#4a5568'}}>🏢</span>
+                    <span className="font-semibold" style={{color: '#2d3748'}}>{exp.company}</span>
+                  </div>
+                  <h3 className="text-lg font-semibold mb-2" style={{color: '#2d3748'}}>{exp.title}</h3>
+                </div>
+                <div className="flex items-center gap-2 text-sm" style={{color: '#4a5568'}}>
+                  <span>📅</span>
+                  <span>{exp.period}</span>
+                </div>
               </div>
-              <span className="text-sm mt-2 md:mt-0" style={{color: '#ffffff'}}>{exp.period}</span>
             </div>
           ))}
         </div>

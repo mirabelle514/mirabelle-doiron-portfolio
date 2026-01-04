@@ -38,47 +38,54 @@ const Projects = () => {
   ];
 
   return (
-    <div id="projects" className="py-20 px-6" style={{ backgroundColor: '#193441' }}>
+    <div id="projects" className="py-20 px-6" style={{ backgroundColor: '#f8f9fa' }}>
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl font-bold mb-12 text-center" style={{ color: '#ffffff' }}>Featured <span style={{ color: '#ffffff' }}>Projects</span>
-        </h2>
+        <h2 className="text-3xl font-bold mb-4 text-center" style={{ color: '#2d3748' }}>Featured Projects</h2>
+        <p className="text-center mb-12" style={{ color: '#4a5568' }}>
+          A collection of projects showcasing my expertise in AI integration, frontend development, and design systems
+        </p>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, index) => (
             <div 
               key={index} 
-              className="block rounded p-6 hover:shadow-lg transition-all"
-              style={{ backgroundColor: '#193441', border: '1px solid #b9d6e2' }}
+              className="rounded-lg overflow-hidden transition-all hover:shadow-lg"
+              style={{ backgroundColor: '#f5f5f0', border: '1px solid #e2e8f0' }}
             >
-              <div className="flex items-center justify-between mb-4">
-                <span className="text-xs font-medium px-2 py-1 rounded" style={{ backgroundColor: '#b9d6e2', color: '#193441' }}>
-                  {project.type}
-                </span>
+              <div className="p-4" style={{ backgroundColor: '#ebe9e4' }}>
+                <div className="w-12 h-12 mx-auto flex items-center justify-center">
+                  <span style={{ fontSize: '24px', color: '#4a5568' }}>
+                    {index === 0 ? '🤖' : index === 1 ? '⚙️' : '📦'}
+                  </span>
+                </div>
               </div>
               
-              <h3 className="text-lg font-bold mb-3" style={{ color: '#ffffff' }}>{project.title}</h3>
-              <p className="mb-4 text-sm" style={{ color: '#ffffff' }}>{project.description}</p>
-              
-              <div className="mb-4">
-                <div className="flex flex-wrap gap-2">
+              <div className="p-6">
+                <div className="flex flex-wrap gap-2 mb-4">
                   {project.technologies.map((tech, techIndex) => (
-                    <span key={techIndex} className="text-xs px-2 py-1 rounded" style={{ backgroundColor: '#b9d6e2', color: '#193441' }}>
+                    <span 
+                      key={techIndex} 
+                      className="text-xs px-3 py-1 rounded"
+                      style={{ backgroundColor: '#ffffff', border: '1px solid #cbd5e0', color: '#4a5568' }}
+                    >
                       {tech}
                     </span>
                   ))}
                 </div>
-              </div>
-              
-              <div className="border-t pt-4" style={{ borderColor: '#b9d6e2' }}>
-                <p className="text-xs mb-3" style={{ color: '#ffffff' }}>
-                  <strong>Impact:</strong> {project.impact}
+                
+                <h3 className="text-lg font-semibold mb-3" style={{ color: '#2d3748' }}>{project.title}</h3>
+                <p className="mb-4 text-sm" style={{ color: '#4a5568' }}>{project.description}</p>
+                
+                <p className="text-sm mb-4" style={{ color: '#4a5568' }}>
+                  <strong style={{ color: '#2d3748' }}>Impact:</strong> {project.impact}
                 </p>
+                
                 <a 
                   href={project.link}
-                  className="text-sm font-medium hover:opacity-80 transition-opacity"
-                  style={{ color: '#b9d6e2' }}
+                  className="text-sm font-medium hover:opacity-80 transition-opacity inline-flex items-center"
+                  style={{ color: '#8b2942' }}
                 >
-                  → View case study
+                  View Project <span className="ml-1">→</span>
                 </a>
               </div>
             </div>

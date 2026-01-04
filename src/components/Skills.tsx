@@ -22,28 +22,22 @@ const Skills = () => {
   ];
 
   return (
-    <div id="skills" className="py-20 px-6" style={{ backgroundColor: '#242434' }}>
+    <div id="skills" className="py-20 px-6" style={{ backgroundColor: '#f8f9fa' }}>
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl font-bold mb-12 text-center" style={{ color: '#ffffff' }}>Tech</h2>
+        <h2 className="text-3xl font-bold mb-12 text-center" style={{ color: '#2d3748' }}>Technical Skills</h2>
         
-        <div className="space-y-6">
-          {skillCategories.map((category, index) => (
-            <div key={index} className="flex flex-col md:flex-row md:items-center gap-4">
-              <span className="font-semibold min-w-24" style={{ color: '#b9d6e2' }}>
-                {category.name}:
+        <div className="flex flex-wrap justify-center gap-3">
+          {skillCategories.flatMap((category) => 
+            category.skills.map((skill, skillIndex) => (
+              <span 
+                key={`${category.name}-${skillIndex}`} 
+                className="px-4 py-2 rounded-full text-sm"
+                style={{ backgroundColor: '#ffffff', border: '1px solid #cbd5e0', color: '#4a5568' }}
+              >
+                {skill}
               </span>
-              <div className="flex flex-wrap gap-2">
-                {category.skills.map((skill, skillIndex) => (
-                  <span key={skillIndex} className="flex items-center">
-                    <span style={{ color: '#ffffff' }}>{skill}</span>
-                    {skillIndex < category.skills.length - 1 && (
-                      <span className="mx-2" style={{ color: '#b9d6e2' }}>•</span>
-                    )}
-                  </span>
-                ))}
-              </div>
-            </div>
-          ))}
+            ))
+          )}
         </div>
       </div>
     </div>
