@@ -1,7 +1,7 @@
-/* Professional Resume App Styles */
+/* Professional Resume App Styles - Light Theme */
 .App {
   text-align: center;
-  background-color: #193441;
+  background-color: var(--color-bg-primary);
   min-height: 100vh;
 }
 
@@ -17,13 +17,13 @@
 }
 
 .App-header {
-  background-color: #193441;
+  background-color: var(--color-bg-nav);
   padding: 20px;
-  color: #ffffff;
+  color: var(--color-text-light);
 }
 
 .App-link {
-  color: #991818;
+  color: var(--color-accent-burgundy);
 }
 
 /* Ensure proper spacing for fixed navigation */
@@ -31,55 +31,76 @@ main {
   padding-top: 0;
 }
 
-.text-gradient-portfolio {
-  background: linear-gradient(135deg, #b9d6e2 0%, #8ba9b8 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
+/* Portfolio card styles - cream background */
 .portfolio-card {
-  background: #193441;
-  border: 1px solid #b9d6e2;
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border-card);
+  border-radius: 8px;
   transition: all 0.3s ease;
 }
 
 .portfolio-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
+/* Primary button - teal filled */
 .portfolio-button {
-  background: #b9d6e2;
+  background: var(--color-accent-teal);
   border: none;
-  color: #193441;
+  color: var(--color-text-light);
   padding: 12px 24px;
-  border-radius: 4px;
+  border-radius: 6px;
   font-weight: 600;
   transition: all 0.3s ease;
   cursor: pointer;
 }
 
 .portfolio-button:hover {
+  background: var(--color-accent-teal-light);
   transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(185, 214, 226, 0.3);
+  box-shadow: 0 4px 12px rgba(61, 90, 108, 0.3);
 }
 
+/* Outline button */
 .portfolio-button-outline {
   background: transparent;
-  border: 2px solid #b9d6e2;
-  color: #b9d6e2;
+  border: 2px solid var(--color-accent-teal);
+  color: var(--color-accent-teal);
   padding: 12px 24px;
-  border-radius: 4px;
+  border-radius: 6px;
   font-weight: 600;
   transition: all 0.3s ease;
   cursor: pointer;
 }
 
 .portfolio-button-outline:hover {
-  background: #b9d6e2;
-  color: #193441;
+  background: var(--color-accent-teal);
+  color: var(--color-text-light);
   transform: translateY(-2px);
+}
+
+/* Tech tags - pill style with border */
+.tech-tag {
+  background: var(--color-tag-bg);
+  border: 1px solid var(--color-tag-border);
+  color: var(--color-tag-text);
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+/* Accent link - burgundy */
+.accent-link {
+  color: var(--color-accent-burgundy);
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.2s ease;
+}
+
+.accent-link:hover {
+  opacity: 0.8;
 }
 
 /* Responsive adjustments */

@@ -6,37 +6,44 @@ interface HeroProps {
 
 const Hero = ({ scrollToSection }: HeroProps) => {
   return (
-    <div id="hero" className="pt-24 pb-20 px-6" style={{ backgroundColor: '#242434' }}>
+    <div id="hero" className="pt-24 pb-20 px-6" style={{ backgroundColor: '#ffffff' }}>
       <div className="max-w-6xl mx-auto">
         <div className="text-center">
-          <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-            FULL STACK <span style={{ color: '#991818' }}>ENGINEER</span>
+          <p className="text-sm font-semibold tracking-wider uppercase mb-4" style={{ color: '#3d5a6c' }}>
+            SENIOR FRONTEND ENGINEER
+          </p>
+          <h1 className="text-5xl md:text-6xl font-light mb-6" style={{ color: '#2d3748' }}>
+            Senior Frontend{' '}
+            <span className="block" style={{ color: '#8b2942' }}>Engineer (UX/AI)</span>
           </h1>
-                                  <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto" style={{ color: '#b9d6e2' }}>
-              Specializing in developer tools and data-driven user experiences. 
-              Passionate about AI integration and creating intelligent solutions.
-            </p>
+          <p className="text-lg md:text-xl mb-10 max-w-3xl mx-auto" style={{ color: '#4a5568' }}>
+            7 years building design systems and AI-powered experiences. At Indeed, I built tooling for engineers and designers—including an AI assistant that significantly improved documentation search and adoption.
+          </p>
           
-          <div className="flex justify-center space-x-6">
-            <a 
-              href="/resume.pdf" 
-              download="Mirabelle_Doiron_Resume.pdf"
-              className="flex items-center px-6 py-3 rounded hover:opacity-80 transition-opacity" 
-              style={{ backgroundColor: '#b9d6e2', color: '#193441' }}
+          <div className="flex justify-center flex-wrap gap-4">
+            <button 
+              onClick={() => scrollToSection('projects')}
+              className="px-6 py-3 rounded-md font-medium transition-all hover:opacity-90" 
+              style={{ backgroundColor: '#3d5a6c', color: '#ffffff' }}
             >
-              <span className="mr-2">Download PDF</span>
-              <span style={{ fontSize: '16px' }}>↓</span>
-            </a>
+              View Projects
+            </button>
+            
+            <button 
+              onClick={() => scrollToSection('about')}
+              className="px-6 py-3 rounded-md font-medium transition-all hover:opacity-90" 
+              style={{ backgroundColor: '#3d5a6c', color: '#ffffff' }}
+            >
+              About Me
+            </button>
             
             <a 
               href="/resume.pdf" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="flex items-center px-6 py-3 rounded hover:opacity-80 transition-opacity" 
-              style={{ backgroundColor: '#242434', color: '#ffffff', border: '1px solid #b9d6e2' }}
+              download="Mirabelle_Doiron_Resume.pdf"
+              className="px-6 py-3 rounded-md font-medium transition-all hover:opacity-90" 
+              style={{ backgroundColor: '#3d5a6c', color: '#ffffff' }}
             >
-              <span className="mr-2">View Online</span>
-              <span style={{ fontSize: '16px' }}>↗</span>
+              Download Resume
             </a>
           </div>
         </div>
