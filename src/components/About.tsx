@@ -4,19 +4,19 @@ const About = () => {
   return (
     <section id="about" className="py-20 px-6" style={{ backgroundColor: '#193441' }}>
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl font-bold mb-8 text-center" style={{ color: '#ffffff' }}>About Me</h2>
+        <h2 className="text-3xl font-bold mb-8 text-center" style={{ color: '#ffffff' }}>About</h2>
         <div className="text-lg space-y-6" style={{ color: '#ffffff' }}>
           <p>
-            I'm a Full Stack Engineer with 4 years of experience transforming how teams interact with data and internal tools. 
-            My journey at Indeed took me from Email/UX Developer to iOS development, with significant focus on AI integration initiatives.
+            I'm a Senior Frontend Engineer specializing in design systems and AI integration.
           </p>
           <p>
-            I solve complex technical problems with intuitive user experiences, specializing in building tools that make other developers more productive. 
-            My expertise spans the full stack - from React/TypeScript frontends to SQL databases and data processing systems.
+            At Indeed, I built tooling for engineers and designers—including an AI assistant that significantly improved documentation search and adoption across the team.
           </p>
           <p>
-            What drives me is creating leverage for others and improving user experiences, particularly in data management and developer tooling. 
-            I thrive in environments with ambiguity and am passionate about learning new technologies to solve complex problems.
+            I focus on the intersection of craft (clean component APIs, intuitive UX) and intelligence (AI features that feel magical, not clunky).
+          </p>
+          <p style={{ color: '#b9d6e2' }}>
+            <strong>Currently exploring:</strong> AI coding assistants, MCP servers, and how AI can accelerate frontend development.
           </p>
         </div>
       </div>

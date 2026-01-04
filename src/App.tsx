@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -8,10 +8,10 @@ import Skills from './components/Skills';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
-const App = () => {
-  const [activeSection, setActiveSection] = (React as any).useState('hero');
+const App: React.FC = () => {
+  const [activeSection, setActiveSection] = useState<string>('hero');
 
-  (React as any).useEffect(() => {
+  useEffect(() => {
     const handleScroll = () => {
       const sections = ['hero', 'about', 'experience', 'projects', 'skills', 'contact'];
       const scrollPosition = window.scrollY + 100;

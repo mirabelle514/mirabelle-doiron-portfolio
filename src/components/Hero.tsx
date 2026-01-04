@@ -10,12 +10,11 @@ const Hero = ({ scrollToSection }: HeroProps) => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-            FULL STACK <span style={{ color: '#991818' }}>ENGINEER</span>
+            Senior Frontend Engineer <span style={{ color: '#b9d6e2' }}>(UX/AI)</span>
           </h1>
-                                  <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto" style={{ color: '#b9d6e2' }}>
-              Specializing in developer tools and data-driven user experiences. 
-              Passionate about AI integration and creating intelligent solutions.
-            </p>
+          <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto" style={{ color: '#b9d6e2' }}>
+            7 years building design systems and AI-powered experiences
+          </p>
           
           <div className="flex justify-center space-x-6">
             <a 
