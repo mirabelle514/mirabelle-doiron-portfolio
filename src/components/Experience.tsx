@@ -28,30 +28,21 @@ const Experience = () => {
   return (
     <section id="experience" className="py-20 px-6" style={{backgroundColor: '#ffffff'}}>
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl font-bold mb-4 text-center" style={{color: '#2d3748'}}>Experience</h2>
-        <p className="text-center mb-12" style={{color: '#4a5568'}}>
-          7+ years of professional experience in frontend development, and recently fell in love with AI integration technologies
-        </p>
+        <h2 className="text-3xl font-bold mb-12 text-center" style={{color: '#2d3748'}}>Experience</h2>
         
-        <div className="space-y-6">
+        <div className="space-y-4">
           {experiences.map((exp, index) => (
             <div 
               key={index}
-              className="p-6 rounded-lg"
+              className="p-5 rounded-lg"
               style={{backgroundColor: '#f5f5f0', border: '1px solid #e2e8f0'}}
             >
-              <div className="flex flex-col md:flex-row md:items-start md:justify-between">
+              <div className="flex flex-col md:flex-row md:items-center md:justify-between">
                 <div>
-                  <div className="flex items-center gap-2 mb-1">
-                    <span className="text-lg" style={{color: '#4a5568'}}>🏢</span>
-                    <span className="font-semibold" style={{color: '#2d3748'}}>{exp.company}</span>
-                  </div>
-                  <h3 className="text-lg font-semibold mb-2" style={{color: '#2d3748'}}>{exp.title}</h3>
+                  <h3 className="font-semibold" style={{color: '#2d3748'}}>{exp.title}</h3>
+                  <p className="text-sm" style={{color: '#4a5568'}}>{exp.company}</p>
                 </div>
-                <div className="flex items-center gap-2 text-sm" style={{color: '#4a5568'}}>
-                  <span>📅</span>
-                  <span>{exp.period}</span>
-                </div>
+                <p className="text-sm mt-2 md:mt-0" style={{color: '#718096'}}>{exp.period}</p>
               </div>
             </div>
           ))}
