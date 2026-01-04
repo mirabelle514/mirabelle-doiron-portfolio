@@ -1,4 +1,5 @@
 import React from 'react';
+import { tokens } from '../tokens';
 
 interface ExperienceItem {
   title: string;
@@ -26,23 +27,23 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="py-20 px-6" style={{backgroundColor: '#ffffff'}}>
+    <section id="experience" className="py-20 px-6" style={{backgroundColor: tokens.colors.bg.primary}}>
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl font-bold mb-12 text-center" style={{color: '#2d3748'}}>Experience</h2>
+        <h2 className="text-3xl font-bold mb-12 text-center" style={{color: tokens.colors.text.primary}}>Experience</h2>
         
         <div className="space-y-4">
           {experiences.map((exp, index) => (
             <div 
               key={index}
               className="p-5 rounded-lg"
-              style={{backgroundColor: '#f5f5f0', border: '1px solid #e2e8f0'}}
+              style={{backgroundColor: tokens.colors.bg.card, border: `1px solid ${tokens.colors.border.default}`}}
             >
               <div className="flex flex-col md:flex-row md:items-center md:justify-between">
                 <div>
-                  <h3 className="font-semibold" style={{color: '#2d3748'}}>{exp.title}</h3>
-                  <p className="text-sm" style={{color: '#4a5568'}}>{exp.company}</p>
+                  <h3 className="font-semibold" style={{color: tokens.colors.text.primary}}>{exp.title}</h3>
+                  <p className="text-sm" style={{color: tokens.colors.text.secondary}}>{exp.company}</p>
                 </div>
-                <p className="text-sm mt-2 md:mt-0" style={{color: '#718096'}}>{exp.period}</p>
+                <p className="text-sm mt-2 md:mt-0" style={{color: tokens.colors.text.muted}}>{exp.period}</p>
               </div>
             </div>
           ))}

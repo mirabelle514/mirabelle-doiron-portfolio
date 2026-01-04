@@ -1,16 +1,17 @@
-# Mirabelle Doiron - Portfolio
+# Mirabelle Doiron | Senior Frontend Engineer (UX/AI)
 
-Personal portfolio website for a Senior Frontend Engineer (UX/AI) specializing in design systems and AI-powered experiences.
+Portfolio showcasing 8+ years of experience building design systems and AI-powered experiences. Former Indeed engineer who built AI automation tools, participated in Claude AI Pilot Program, and created a Design System AI agent that increased team productivity by 40%.
 
 ## About
 
-7 years building design systems and AI-powered experiences. At Indeed, built tooling for engineers and designers, including an AI assistant that improved documentation search and adoption. Participated in the Claude AI Pilot Program, implementing AI-powered features and creating a Design System AI agent.
+This portfolio demonstrates expertise in frontend engineering, design systems, and AI automation. Built with modern React patterns, TypeScript, and a custom design tokens system for maintainable, scalable code.
 
 ## Tech Stack
 
-- React, TypeScript, Tailwind CSS
-- OpenAI, RAG, Vector DBs, MCP
-- Figma, Storybook, Git, Vercel
+- **Frontend:** React, TypeScript, Tailwind CSS
+- **Design System:** Design Tokens, CSS Variables
+- **AI/ML:** OpenAI, RAG, Vector DBs, MCP
+- **Tools:** Figma, Storybook, GitHub, Vercel
 
 ## Getting Started
 
